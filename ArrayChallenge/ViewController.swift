@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        makeShoppingListWithItems(nameOfItems, quantityOfItems: quantityOfItems)
+        // makeShoppingListWithItems(nameOfItems, quantityOfItems: quantityOfItems)
         
                 
     }
@@ -33,7 +33,8 @@ class ViewController: UIViewController {
         
         for (index, item) in itemsNedded.enumerate(){
             var value : String
-            let quantity = String(quantityOfItems[index])
+            let quantity = (quantityOfItems[index])
+            
             value = "\(index+1). \(quantity) \(item)"
             shoppingList.append(value)
         }
